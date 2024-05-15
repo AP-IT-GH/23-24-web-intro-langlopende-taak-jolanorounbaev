@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <title>Chemische sensoren</title>
+
+                    <!-- Links CSS en bootstrap -->
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">   
+              
+                     <!-- Links JS bootstrap -->
+     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  
+    <!-- Links CSS en bootstrap voor carrousel -->
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </head>
+
+              <!-- Links CSS en bootstrap voor leaflet -->
+
+              <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+              integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+             <link rel="stylesheet" href="/css/style.css">
+             <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+              integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+             <script src="/Js/mapScript3.js" defer></script>
+         
+
+
+<body class="black">
+
+  <!-- Navbar -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="/index.html">
+      <img src="/assets/Logo.jpg" alt="Logo iotdrivenrobots" class="logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="navlink" href="/index.html">Startpagina</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="navlink dropdown-toggle" href="/diensten.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+           Diensten
+          </a>
+          <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+            <a class="navlink" href="/diensten.html" >Diensten</a>
+            <div class="dropdown-divider"></div>
+            <a class="navlink" href="/diensten/Robotics.html" >Robotics</a>
+            <div class="dropdown-divider"></div>
+            <a class="navlink" href="/diensten/Sensoren.html" >Sensoren</a>
+            <div class="dropdown-divider"></div>
+            <a class="navlink" href="/diensten/Industrielesector.html" >Industriële sector</a>
+            <div class="dropdown-divider"></div>
+            <a class="navlink" href="/diensten/Chemischesensoren.html" >Chemische sensoren</a>
+            <div class="dropdown-divider"></div>
+            <a class="navlink" href="/diensten/Servicesector.html" >Service sector</a>
+            <div class="dropdown-divider"></div>
+            <a class="navlink" href="/diensten/Biometrischesensoren.html" >Biometrische sensoren</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="navlink" href="/diensten/nieuws.html">Nieuws</a>
+        </li>
+        <li class="nav-item">
+          <a class="navlink" href="/diensten/Toepassingen.html">Toepassingen</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <div class="search-nav">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+      </div>
+      </form>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="navlink" href="/contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+<header><h1 class="centered-title">Waarom chemische sensoren interessant zijn.</h1></header>
+<main>
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <figure>
+        <img src="/assets/Chemischesensor1.jpg" class="d-block  carrousel-image" alt="Foto van sensor in medische sector">
+        <figcaption>© https://www.pinterest.com/pin/858428378945421923/</figcaption>
+      </figure>
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="centered-tekst">chemische sensoren voor gezondheidsmonitoring.</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <figure>
+        <img src="/assets/Chemischesensor2.jpg" class="d-block  carrousel-image" alt="Foto van sensor in mileusector">
+        <figcaption>© https://asairsensors.com/environmental-monitoring-solutions/</figcaption>
+      </figure>
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="centered-tekst">chemische sensoren in milieumonitoring.</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <figure>
+        <img src="/assets/Chemischesensor3.jpg" class="d-block  carrousel-image" alt="Foto van sensor in nanosector">
+        <figcaption>© https://www.mdpi.com/1424-8220/19/23/5311</figcaption>
+      </figure>
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="centered-tekst">nanomaterialen voor chemische sensoren.</h5>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+<h4 class="centered-title">Ontwikkeling van draagbare chemische sensoren voor gezondheidsmonitoring.</h4>
+<aside>
+  <p class="centered-left">Met de opkomst van gepersonaliseerde geneeskunde en de noodzaak voor continue gezondheidsmonitoring, zijn draagbare chemische sensoren van groot belang. Ze kunnen real-time gegevens leveren en vroegtijdige waarschuwingen geven voor gezondheidsproblemen.</p>
+</aside>
+<p class="centered-left-chemischesensoren">Dit topic richt zich op de vooruitgang in draagbare technologieën die in staat zijn om verschillende biomarkers in lichaamsvloeistoffen zoals zweet, speeksel en bloed te detecteren. Deze sensoren kunnen worden gebruikt voor het monitoren van vitale functies, glucosegehaltes bij diabetespatiënten, en zelfs voor het opsporen van infecties.</p>
+<h4 class="centered-title">Gebruik van chemische sensoren in milieumonitoring.</h4>
+<aside>
+  <p class="centered-left">Milieubescherming en duurzaamheid zijn cruciaal voor de toekomst van onze planeet. Chemische sensoren bieden een kosteneffectieve en efficiënte manier om vervuiling te volgen en te beheersen, en dragen zo bij aan een schonere en veiligere leefomgeving.</p>
+</aside>
+<p class="centered-left-chemischesensoren">Chemische sensoren worden gebruikt om verontreinigende stoffen in lucht, water en bodem te detecteren. Ze kunnen helpen bij het monitoren van industriële uitstoot, het opsporen van lekkages van gevaarlijke stoffen en het bewaken van de waterkwaliteit.</p>
+<h4 class="centered-title">Innovaties in nanomaterialen voor chemische sensoren.</h4>
+<aside>
+  <p class="centered-left">De integratie van nanomaterialen in chemische sensoren kan leiden tot significant verbeterde prestaties, waaronder snellere respons, hogere gevoeligheid en betere robuustheid. Dit opent nieuwe mogelijkheden voor toepassingen in verschillende sectoren, van medische diagnostiek tot industriële processen.</p>
+</aside>
+<p class="centered-left-chemischesensoren">Dit topic onderzoekt de toepassing van nanomaterialen zoals grafeen, koolstofnanobuisjes en nanodraden in chemische sensoren. Nanomaterialen hebben unieke eigenschappen zoals een groot oppervlak, hoge gevoeligheid en selectiviteit, waardoor ze ideaal zijn voor het detecteren van lage concentraties van chemische stoffen.</p>
+
+<h5 class="centered-title">Honeywell</h5>
+
+<section id="Contactmap"  class="row">
+  <div id="Contactmap" class="col-12 mb-3"></div>
+</section>
+
+<p class="centered-tekst">Gevestig in Noord Carolina, Honeywell produceert chemische sensoren door geavanceerde technologieën en precisieproductieprocessen te combineren. Het proces begint met de selectie van hoogwaardige materialen, zoals geschikte halfgeleiders, elektroden en membranen, die specifiek reageren op bepaalde chemische stoffen. Vervolgens worden deze materialen verwerkt met behulp van fotolithografie en andere microfabricagetechnieken om gevoelige lagen en structuren op microschaal te creëren. De detectorelementen worden daarna geïntegreerd in een beschermende behuizing om ze te beschermen tegen omgevingsfactoren en interferenties. Ten slotte ondergaan de sensoren een nauwkeurige kalibratie en uitgebreide tests om te verzekeren dat ze betrouwbaar en accuraat functioneren in diverse toepassingen. Door deze stappen te volgen, produceert Honeywell robuuste en betrouwbare chemische sensoren die essentieel zijn voor industriële veiligheid, milieumonitoring en medische diagnostiek.</p>
+
+
+</main>
+<footer class="text-center text-lg-start text-muted ">
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <div class="me-5 d-none d-lg-block">
+      <span>Leer meer over ons:</span>
+    </div>
+
+
+  </section>
+
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <div class="row mt-3">
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Company name
+          </h6>
+          <p class="wit">
+            © Iot-drivenrobots All rights reserved. A not-for-profit organization
+          </p>
+        </div>
+
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p class="black">
+            <a href="#!" class="wit ">Iot-drivensensors</a>
+          </p>
+          <p class="black">
+            <a href="#!" class="wit">Iot-drivencars</a>
+          </p>
+          <p class="black">
+            <a href="#!" class="wit">Iot-drivencomputers</a>
+          </p>
+          <p class="black">
+            <a href="#!" class="wit">Iot-drivenmachines</a>
+          </p>
+        </div>
+
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p class="black">
+            <a href="#!" class="wit">Pricing</a>
+          </p>
+          <p class="black">
+            <a href="#!" class="wit">Settings</a>
+          </p>
+          <p class="black">
+            <a href="#!" class="wit">Orders</a>
+          </p>
+          <p class="black">
+            <a href="#!" class="wit">Help</a>
+          </p>
+        </div>
+
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p class="black wit"><i class="fas fa-home me-3 "></i> New York, NY 10012, US</p>
+          <p class="black wit">
+            <i class="fas fa-envelope me-3 "></i>
+            Iotdrivencars@hotmail.com
+          </p>
+          <p class="black wit"><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+          <p class="black wit"><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="text-center p-4" style="color: rgb(182, 175, 175)">
+    Orounbaev Jolan G_1IOTH_H_D1
+  </div>
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+</footer>
+</body>
+
+</html>
